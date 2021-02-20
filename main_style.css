@@ -1,6 +1,40 @@
+body, h2 {
+    margin: 0;
+}
+section {
+    min-height: 100vh;
+}
 section:nth-child(odd) {
-  background: #709fb0;
+    background: #709FB0;
 }
 section:nth-child(even) {
-  background: #a7c5eb;
+    background: #A7C5EB;
+}
+/* Style the navbar */
+.navbar {
+    overflow: hidden;
+    display: flex;
+    background-color: #413C69;
+}
+/* Navbar links */
+.navbar div {
+    margin: auto;
+}
+a {
+    display: block;
+    color: #F2F2F2;
+    text-align: center;
+    text-decoration: none;
+    /* padding: 16px; */
+}
+.content {
+    padding: 16px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+:target {
+    padding-top: 70px;
 }
