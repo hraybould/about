@@ -1,0 +1,117 @@
+/* Generic Styling */
+section, div, p, a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+}
+body, h2 {
+    margin: 0;
+}
+.font-200 {
+    font-size: 200%;
+}
+.cursive {
+    font-family: 'Lacquer', cursive;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center {
+    text-align: center;
+}
+/* Image styles */
+.auto-img {
+    height: 100%;
+    width: auto;
+}
+.nav-img {
+    height: 100px;
+    width: auto;
+    margin: 0 2.5vw;
+}
+.mw-img {
+    max-width: 400px;
+}
+.hide-overflow {
+    overflow: hidden;
+}
+/* Section Styling */
+section {
+    min-height: calc(100vh - 100px);
+}
+section:nth-child(odd) {
+    background-color: #e0ebe8;
+    background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+}
+section:nth-child(even) {
+    /* background-color: #03506f; */
+    /* background-color: #a3ddcb; */
+    background-color: #e0ebe8;
+    background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+/* Style the navbar */
+.navbar {
+    background-color: #e0ebe8;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    z-index: 999;
+}
+.navbar, .nav-offset {
+    height: 100px;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+a {
+    display: block;
+    color: #020202;
+    text-align: center;
+    text-decoration: none;
+    margin: 16px;
+    font-weight: bold;
+}
+.content {
+    /* margin: 16px 0; */
+    margin: 0;
+    padding: 16px;
+}
+.formatting {
+    margin-top: -100px;
+    padding-top: 116px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*
+:target {
+    padding-top: 100px;
+}
+*/
+.fixed-box {
+    height: 150px;
+    width: 150px;
+}
+.round {
+    border-radius: 50%;
+}
+.sub-section {
+    margin: 2em calc(2em + 5vw);
+}
+#htmlcssjs {
+    margin: 8% 0 0 -50%;
+    height: 200%;
+    width: auto;
+}
+#nodereact {
+    /* margin: 8% 0 0 -50%; */
+    /* TODO: THIS */
+    height: 100%;
+    width: auto;
+}

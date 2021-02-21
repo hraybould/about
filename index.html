@@ -10,35 +10,67 @@
         <meta property="og:url" content="">
         <meta property="og:image" content="">
         <!-- Add Font -->
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
         <!-- Add Main Stylesheet -->
-        <link rel="stylesheet" href="main_style.css">
+        <link rel="stylesheet" href="css/main_style.css">
+        <link rel="stylesheet" href="css/animations.css">
         <!-- Add Button Effects -->
-        <link rel="stylesheet" href="button_effects.css">
+        <!-- <link rel="stylesheet" href="css/button_effects.css"> -->
         <!-- <script src="main.js"></script> -->
     </head>
     <body>
-        <div id="navbar" class="navbar sticky">
-            <div>
-                <a class="btn from-left" href="#about">About Me</a>
+        <!-- Navbar -->
+        <div id="navbar" class="navbar sticky flex hide-overflow">
+            <img class="nav-img" src="memoji/mac.png" alt="Memoji Macintosh">
+            <div class="mx-auto my-auto">
+                <a class="" href="#about">About Me</a>
             </div>
-            <div>
-                <a class="btn from-top" href="#cando">What I Can Do</a>
+            <div class="mx-auto my-auto">
+                <a class="" href="#cando">What I Can Do</a>
             </div>
-            <div>
-                <a class="btn from-right" href="#havedone">What I Have Done</a>
+            <div class="mx-auto my-auto">
+                <a class="" href="#havedone">What I Have Done</a>
             </div>
         </div>
-        <!-- Navbar -->
+        <div class="nav-offset"></div>
+        <section id="intro" class="content">
+            <div class="text-center">
+                <h2>Hi</h2>
+                <img class="auto-img" src="memoji/wave.png" alt="Memoji Wave">
+                <h1 class="font-200 cursive">I'm Harrison</h1>
+                <p>A Physics Gradute</p>
+                <p>A Programmer</p>
+            </div>
+        </section>
         <section id="about" class="content">
-            <h2>About Me</h2>
-        </section>
-        <section id="cando" class="content">
-            <h2>What I can do</h2>
-        </section>
-        <section id="havedone" class="content">
-            <h2>What I Have Done</h2>
-        </section>
-    </body>
-    <script type="text/javascript"></script>
+            <div class="sub-section flex mx-auto">
+                <div class="mx-auto fixed-box round hide-overflow">
+                    <img id="htmlcssjs" class="rotate-simple" src="logos/html-css-js.png" alt="HTML, CSS, and JS Logos">
+                </div>
+                <p class="mx-auto my-auto">I'm a programmer with a passion for Web Development.</p>
+            </div>
+            <div class="sub-section flex mx-auto">
+                <p class="mx-auto my-auto">I develop mostly with Python, JavaScript, HTML, and CSS</p>
+                <div class="mx-auto fixed-box round">
+                    <img class="auto-img" src="logos/python.png" alt="Python Logo">
+                </div>
+            </div>
+            <div class="sub-section flex mx-auto">
+                <div class="mx-auto fixed-box round hide-overflow">
+                    <img id="nodereact" class="bounce-simple" src="logos/node_react.png" alt="NodeJS and React Logos">
+                </div>
+                <p class="mx-auto my-auto">I am currently learning my way around NodeJS and React</p>
+            </div>
+        </p>
+    </section>
+    <section id="cando" class="content">
+        <h2>What I can do</h2>
+    </section>
+    <section id="havedone" class="content">
+        <h2>What I Have Done</h2>
+    </section>
+</body>
+<script type="text/javascript"></script>
 </html>

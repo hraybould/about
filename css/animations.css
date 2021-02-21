@@ -1,0 +1,48 @@
+.rotate-simple {
+    animation: rotate 12s infinite;
+    animation-timing-function: ease-in-out;
+}
+.bounce-simple {
+    animation: bounce 6s infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    16.6% {
+        transform: rotate(-120deg);
+    }
+    33.3% {
+        transform: rotate(-120deg);
+    }
+    50% {
+        transform: rotate(-240deg);
+    }
+    66.6% {
+        transform: rotate(-240deg);
+    }
+    83.3% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
