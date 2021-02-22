@@ -1,4 +1,18 @@
+/* Image Animations */
+#htmlcssjs {
+    margin: 8% 0 0 -50%;
+    height: 200%;
+    width: auto;
+}
+#nodereact {
+    /* margin: 8% 0 0 -50%; */
+    height: 100%;
+    width: auto;
+}
 /* Generic Styling */
+html {
+    scroll-behavior: smooth;
+}
 section, div, p, a {
     font-family: 'Montserrat', sans-serif;
     font-size: 110%;
@@ -6,17 +20,27 @@ section, div, p, a {
 body, h2 {
     margin: 0;
 }
+.d-none {
+    display: none;
+}
 .font-200 {
     font-size: 200%;
 }
 .cursive {
     font-family: 'Lacquer', cursive;
 }
+.mt-0 {
+    margin-top: 0;
+}
 .flex {
     display: flex;
     flex-wrap: wrap;
 }
-.text-center {
+.flex-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.text-centre {
     text-align: center;
 }
 /* Image styles */
@@ -35,8 +59,43 @@ body, h2 {
 .hide-overflow {
     overflow: hidden;
 }
+.hide-overflow-x {
+    overflow-x: hidden;
+}
+.mb-minus {
+    margin-bottom: -50px
+}
+.content {
+    /* display: flex; */
+    margin: 0 0;
+    padding: 16px;
+}
+.p-16 {
+    padding: 16px 0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.fixed-box {
+    height: 150px;
+    width: 150px;
+}
+.round {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.sub-section {
+    margin: 2em calc(2em + 5vw);
+}
+.pointer {
+    cursor: pointer;
+}
 /* Section Styling */
 section {
+    /* min-height: 100vh; */
     min-height: calc(100vh - 100px);
 }
 section:nth-child(odd) {
@@ -72,46 +131,6 @@ a {
     color: #020202;
     text-align: center;
     text-decoration: none;
-    margin: 16px;
+    margin: 16px 0;
     font-weight: bold;
-}
-.content {
-    /* margin: 16px 0; */
-    margin: 0;
-    padding: 16px;
-}
-.formatting {
-    margin-top: -100px;
-    padding-top: 116px;
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-/*
-:target {
-    padding-top: 100px;
-}
-*/
-.fixed-box {
-    height: 150px;
-    width: 150px;
-}
-.round {
-    border-radius: 50%;
-}
-.sub-section {
-    margin: 2em calc(2em + 5vw);
-}
-#htmlcssjs {
-    margin: 8% 0 0 -50%;
-    height: 200%;
-    width: auto;
-}
-#nodereact {
-    /* margin: 8% 0 0 -50%; */
-    /* TODO: THIS */
-    height: 100%;
-    width: auto;
 }

@@ -20,57 +20,73 @@
         <!-- <link rel="stylesheet" href="css/button_effects.css"> -->
         <!-- <script src="main.js"></script> -->
     </head>
-    <body>
+    <body class="hide-overflow-x">
         <!-- Navbar -->
         <div id="navbar" class="navbar sticky flex hide-overflow">
-            <img class="nav-img" src="memoji/mac.png" alt="Memoji Macintosh">
+            <img class="nav-img pointer" src="memoji/mac.png" alt="Memoji Macintosh" onclick="scroller('intro');">
             <div class="mx-auto my-auto">
-                <a class="" href="#about">About Me</a>
+                <a class="pointer" onclick="scroller('about');">About Me</a>
             </div>
             <div class="mx-auto my-auto">
-                <a class="" href="#cando">What I Can Do</a>
+                <a class="pointer" onclick="scroller('cando');">What I Can Do</a>
             </div>
             <div class="mx-auto my-auto">
-                <a class="" href="#havedone">What I Have Done</a>
+                <a class="pointer" onclick="scroller('havedone');">What I Have Done</a>
             </div>
         </div>
         <div class="nav-offset"></div>
-        <section id="intro" class="content">
-            <div class="text-center">
-                <h2>Hi</h2>
+        <section id="intro" class="">
+            <div class="content text-centre">
+                <h2 class="mb-minus">Hi</h2>
                 <img class="auto-img" src="memoji/wave.png" alt="Memoji Wave">
-                <h1 class="font-200 cursive">I'm Harrison</h1>
+                <h1 class="font-200 cursive mt-0">I'm Harrison</h1>
                 <p>A Physics Gradute</p>
                 <p>A Programmer</p>
             </div>
         </section>
-        <section id="about" class="content">
-            <div class="sub-section flex mx-auto">
+        <section id="about" class="text-centre">
+            <div class="content flex mx-auto">
                 <div class="mx-auto fixed-box round hide-overflow">
                     <img id="htmlcssjs" class="rotate-simple" src="logos/html-css-js.png" alt="HTML, CSS, and JS Logos">
                 </div>
-                <p class="mx-auto my-auto">I'm a programmer with a passion for Web Development.</p>
+                <p class="mx-auto my-auto">I'm a programmer with a passion for Web Development</p>
             </div>
-            <div class="sub-section flex mx-auto">
+            <div class="content flex-reverse mx-auto">
                 <p class="mx-auto my-auto">I develop mostly with Python, JavaScript, HTML, and CSS</p>
                 <div class="mx-auto fixed-box round">
                     <img class="auto-img" src="logos/python.png" alt="Python Logo">
                 </div>
             </div>
-            <div class="sub-section flex mx-auto">
+            <div class="content flex mx-auto">
                 <div class="mx-auto fixed-box round hide-overflow">
                     <img id="nodereact" class="bounce-simple" src="logos/node_react.png" alt="NodeJS and React Logos">
                 </div>
                 <p class="mx-auto my-auto">I am currently learning my way around NodeJS and React</p>
             </div>
-        </p>
-    </section>
-    <section id="cando" class="content">
-        <h2>What I can do</h2>
-    </section>
-    <section id="havedone" class="content">
-        <h2>What I Have Done</h2>
-    </section>
-</body>
-<script type="text/javascript"></script>
+        </section>
+        <section id="cando" class="">
+            <!-- <h2>What I can do</h2> -->
+        </section>
+        <section id="havedone" class="">
+            <!-- <h2>What I Have Done</h2> -->
+        </section>
+        <div id="autumn-container">
+            <img class="falling-leaf" src="logos/small_icons/bootstrap.png" alt="Technology icon, falling leaf effect" style="left: 5%;">
+            <img class="falling-leaf" src="logos/small_icons/html.png" alt="Technology icon, falling leaf effect" style="left: 15%; animation-delay: 15s;">
+            <img class="falling-leaf" src="logos/small_icons/css.png" alt="Technology icon, falling leaf effect" style="left: 45%; animation-delay: 7.2s;">
+            <img class="falling-leaf" src="logos/small_icons/nodejs.png" alt="Technology icon, falling leaf effect" style="left: 17%; animation-delay: 10.4s;">
+            <img class="falling-leaf" src="logos/small_icons/js.png" alt="Technology icon, falling leaf effect" style="left: 74%; animation-delay: 4s;">
+            <img class="falling-leaf" src="logos/small_icons/react.png" alt="Technology icon, falling leaf effect" style="left: 56%; animation-delay: 2.5s;">
+            <img class="falling-leaf" src="logos/small_icons/flask.png" alt="Technology icon, falling leaf effect" style="left: 69%; animation-delay: 12.2s;">
+        </div>
+    </body>
+    <script type="text/javascript">
+        function scroller(target) {
+            var pageHeight = window.innerHeight;
+            var headerHeight = document.getElementById("navbar").offsetHeight;
+            // console.log(target);
+            var targetPosition = document.getElementById(target).offsetTop;
+            scrollTo(0, targetPosition - headerHeight)
+        };
+    </script>
 </html>
